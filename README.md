@@ -52,7 +52,7 @@ keytool -genkey -v -keystore MytestApp.keystore -alias MytestApp -keyalg RSA -ke
 
 
 ### Add keystore to .apk or .aab file
-To add keystore to .apk or .aab file, jarsigner commanded needed. Type like,
+To add keystore to .apk or .aab file, jarsigner commanded needed at `path\to\your\Project\platforms\android\app\build\outputs\bundle\release\`. Type like,
 
 ```
 
