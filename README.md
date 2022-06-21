@@ -1,3 +1,32 @@
+## How to build android app for uploading on google play store
+
+### Add android from cordova
+
+```
+
+cordova platform add android
+
+```
+
+### Build android app 
+
+```
+
+cordova build android
+
+```
+
+### Get release app 
+Go to `path\to\your\Project\platforms\android\` and run this,
+
+```
+
+./gradlew bundle
+
+```
+
+So at `path\to\your\Project\platforms\android\app\build\outputs\bundle\release\` there will be `.aab` file for uploading. Sign key store and zipalign like below.
+
 ## How to make .aab bundle for uploding on google play store
 To upload .apk or .aab file on google play store console, the file should have keystore with. [Reference here](https://stackoverflow.com/questions/26449512/how-to-create-a-signed-apk-file-using-cordova-command-line-interface).
 
@@ -78,6 +107,20 @@ zipalign -v 4 Example-release-unsigned.apk Example.apk
 
 ```
 
+## Upload test version on google play console
+Proceed login at `https://play.google.com/console/about/` first.
+
+### Register tester
+Go to Internal test and start to register tester at tester tab. After register tester with each email you can use test version.
+
+### Make test version at tester tab
+Make new test version by clicking make new version at tester tab.
+
+### Upload signed .aab file to test version
+.aab file should be signed with key store and zipalign.
+
+## Download test version 
+At tester tab of Internal test, there will be like `join at web`. Click `copy link` and proceed the link at your smartphone which is registered as a tester.
 
 ## Environment
 ### Add specific command on windows
