@@ -141,3 +141,13 @@ keytool and jarsigner commands are in jdk. Add the path on Path at Environment V
 zipalign is in in sdk. Add the path on Path at Environment Variables on windows.
 
 `C:\Users\<username>\AppData\Local\Android\Sdk\build-tools\<version.tools>`
+
+### Download Samsung USB Driver for galaxy mobile phone
+To test android app with physical mobile devices, USB Driver is needed for each device company. For galaxy mobile phone, [link](https://www.samsungsvc.co.kr/download).
+
+### USB debugging allowed on mobile phone
+https://developer.android.com/studio/debug/dev-options
+
+### Pairing by WiFi on mobile phone of android 12
+On developer option, click wireless debugging and read qr code from sdk pairing.
+
